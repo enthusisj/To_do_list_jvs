@@ -2,9 +2,29 @@
 
 body {
   font-family: 'Nanum Brush Script', cursive;
+  text-align: center;
+  margin-top: auto;
+  background-color: lightpink;
 }
 
 *:focus {
     outline: none;
 }
 
+h1 {
+  font-size: 75px;
+}
+
+/*네모칸*/
+.item {
+  font-size: 20px;
+}
+
+.input__button {
+  font-size: 20px;
+}
+
+.item__list {
+  font-size: 25px;
+
+}
