@@ -4,7 +4,8 @@ body {
   font-family: 'Nanum Brush Script', cursive;
   text-align: center;
   margin-top: auto;
-  background-color: lightpink;
+  background: linear-gradient(135deg, lightpink, white);
+
 }
 
 *:focus {
@@ -26,5 +27,33 @@ h1 {
 
 .item__list {
   font-size: 25px;
+  text-align: center;
+}
 
+ul li {
+  cursor: pointer;
+  position: relative;
+}
+.close {
+  position: absolute;
+}
+
+/*체크 및 가운데 선 표시하기*/
+ul li.checked {
+  background: #ddd;
+  color: #272341;
+  text-decoration: line-through;
+}
+
+ul li.checked::before{
+  content: "";
+  position: absolute;
+  border-color: #272341;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 13px;
+  left: 80px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
 }
